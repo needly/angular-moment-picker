@@ -59,8 +59,8 @@ export default class Provider implements angular.IServiceProvider {
 		today: false,
 		keyboard: false,
 		showHeader: true,
-		leftArrow: '\u003C',
-		rightArrow: '\u003E',
+		leftArrow: '\u2039',
+		rightArrow: '\u203A',
 
 		// Decade View
 		yearsFormat: 'YYYY',

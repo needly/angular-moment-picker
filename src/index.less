@@ -1,12 +1,12 @@
 @border-color:              #f0f3f4;
-@text-color:                #404040;
+@text-color:                #394052;
 @text-shadow:               fade(#fff, 90%);
 @background:                #fff;
 @box-shadow-color:          fade(#000, 7.5%);
 
-@today-fg:                  #404040;
+@today-fg:                  #ffffff;
 @today-fg-shadow:           fade(#fff, 90%);
-@today-bg:                  #e4eef5;
+@today-bg:                  #05A6F7;
 
 @hover-bg-color:            #fafbfb;
 @hover-bg-image:            linear-gradient(#f0f3f4, @hover-bg-color);
@@ -16,9 +16,9 @@
 
 @selected-fg:               #fff;
 @selected-fg-shadow:        0 -1px 0 fade(#000, 30%);
-@selected-bg-color:         #45b1e8;
+@selected-bg-color:         #05A6F7;
 @selected-bg-image:         linear-gradient(#45b1e8, #3097de);
-@selected-border-color:     #3ca0dd;
+@selected-border-color:     #05A6F7;
 
 .moment-picker {
     position: relative;
@@ -29,7 +29,7 @@
         color: @text-color;
         min-width: 15em;
         background: @background;
-        padding: 4px;
+        padding: 24px;
         border: 1px solid @border-color;
         border-radius: 4px;
         position: absolute;
@@ -70,20 +70,26 @@
 
     // all views
     table { border-collapse: collapse; border-spacing: 0; min-width: 100%; table-layout: fixed; }
+
+    .header-view { margin-top: 20px; }
+
     th {
         font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
         &:first-child, &:last-child { width: 2em; }
     }
     th, td {
         padding: 0;
         text-align: center;
         min-width: 2em;
-        height: 2em;
+        height: 34px;
+        margin-top: 6px;
         // text-shadow: 0 1px 0 @text-shadow;
         cursor: pointer;
         border-radius: 4px;
         &:hover { background-color: @hover-bg-color; background-image: @hover-bg-image; }
-        &.disabled, &.disabled:hover { color: @disabled-fg; background: none; cursor: default; }
+        &.disabled, &.disabled:hover { opacity: 0; color: @disabled-fg; background: none; cursor: default; }
     }
     td {
         &.today { background: @today-bg; color: @today-fg; text-shadow: 0 1px 0 @today-fg-shadow; }
