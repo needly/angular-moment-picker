@@ -43,17 +43,18 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
 	module.exports = __webpack_require__(16);
 
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var angular = __webpack_require__(2);
 	var provider_1 = __webpack_require__(3);
 	exports.Provider = provider_1["default"];
@@ -70,17 +71,18 @@
 	]);
 
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = angular;
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var angular = __webpack_require__(2);
 	var Provider = (function () {
 	    function Provider() {
@@ -129,15 +131,15 @@
 	    };
 	    return Provider;
 	}());
-	exports.__esModule = true;
 	exports["default"] = Provider;
 
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var angular = __webpack_require__(2);
 	var moment = __webpack_require__(5);
 	var helpers_1 = __webpack_require__(6);
@@ -255,6 +257,7 @@
 	                        hour: 'm{1,2}|[Ll]{3,4}|LT(?!S)',
 	                        /* formats: m,mm,LLL,LLLL,lll,llll,LT */
 	                        minute: 's{1,2}|S{1,}|X|LTS'
+	                        /* formats: s,ss,S,SS,SSS..,X,LTS */
 	                    },
 	                    detectMinMax: function () {
 	                        $scope.detectedMinView = $scope.detectedMaxView = undefined;
@@ -568,21 +571,21 @@
 	    }
 	    return Directive;
 	}());
-	exports.__esModule = true;
 	exports["default"] = Directive;
 
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = moment;
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
+	exports.__esModule = true;
 	/**
 	 * Offset getter method from jQuery: https://github.com/jquery/jquery/blob/3.1.1/src/offset.js#L78
 	 */
@@ -607,11 +610,12 @@
 	};
 
 
-/***/ },
+/***/ }),
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var decadeView_1 = __webpack_require__(8);
 	exports.DecadeView = decadeView_1["default"];
 	var yearView_1 = __webpack_require__(10);
@@ -626,11 +630,12 @@
 	exports.MinuteView = minuteView_1["default"];
 
 
-/***/ },
+/***/ }),
 /* 8 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var utility_1 = __webpack_require__(9);
 	var DecadeView = (function () {
 	    function DecadeView($scope, $ctrl, provider) {
@@ -672,15 +677,15 @@
 	    };
 	    return DecadeView;
 	}());
-	exports.__esModule = true;
 	exports["default"] = DecadeView;
 
 
-/***/ },
+/***/ }),
 /* 9 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var angular = __webpack_require__(2);
 	var moment = __webpack_require__(5);
 	exports.KEYS = { up: 38, down: 40, left: 37, right: 39, escape: 27, enter: 13 };
@@ -750,11 +755,12 @@
 	};
 
 
-/***/ },
+/***/ }),
 /* 10 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var moment = __webpack_require__(5);
 	var utility_1 = __webpack_require__(9);
 	var YearView = (function () {
@@ -798,15 +804,15 @@
 	    };
 	    return YearView;
 	}());
-	exports.__esModule = true;
 	exports["default"] = YearView;
 
 
-/***/ },
+/***/ }),
 /* 11 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var angular = __webpack_require__(2);
 	var moment = __webpack_require__(5);
 	var utility_1 = __webpack_require__(9);
@@ -857,15 +863,15 @@
 	    };
 	    return MonthView;
 	}());
-	exports.__esModule = true;
 	exports["default"] = MonthView;
 
 
-/***/ },
+/***/ }),
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var utility_1 = __webpack_require__(9);
 	var DayView = (function () {
 	    function DayView($scope, $ctrl, provider) {
@@ -909,15 +915,15 @@
 	    };
 	    return DayView;
 	}());
-	exports.__esModule = true;
 	exports["default"] = DayView;
 
 
-/***/ },
+/***/ }),
 /* 13 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var angular = __webpack_require__(2);
 	var moment = __webpack_require__(5);
 	var utility_1 = __webpack_require__(9);
@@ -986,15 +992,15 @@
 	    };
 	    return HourView;
 	}());
-	exports.__esModule = true;
 	exports["default"] = HourView;
 
 
-/***/ },
+/***/ }),
 /* 14 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
+	exports.__esModule = true;
 	var angular = __webpack_require__(2);
 	var utility_1 = __webpack_require__(9);
 	var MinuteView = (function () {
@@ -1063,21 +1069,20 @@
 	    };
 	    return MinuteView;
 	}());
-	exports.__esModule = true;
 	exports["default"] = MinuteView;
 
 
-/***/ },
+/***/ }),
 /* 15 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	module.exports = "<div class=moment-picker> <span class=moment-picker-contents></span> <div class=\"moment-picker-container {{view.selected}}-view\" ng-show=\"(view.isOpen && !disabled) || inline\" ng-class=\"{'moment-picker-disabled': disabled, open: view.isOpen, inline: inline}\"> <div ng-if=additions.top class=\"moment-picker-addition top\"></div> <table class=header-view ng-if=showHeader> <thead> <tr> <th ng-class=\"{disabled: !view.previous.selectable}\" ng-bind-html=view.previous.label ng-click=view.previous.set()></th> <th ng-bind=view.title ng-click=view.setParentView()></th> <th ng-class=\"{disabled: !view.next.selectable}\" ng-bind-html=view.next.label ng-click=view.next.set()></th> </tr> </thead> </table> <div class=moment-picker-specific-views> <table> <thead ng-if=views[view.selected].headers> <tr> <th ng-repeat=\"header in views[view.selected].headers\" ng-bind=header></th> </tr> </thead> <tbody> <tr ng-repeat=\"row in views[view.selected].rows\"> <td ng-repeat=\"item in row track by item.index\" ng-class=item.class ng-bind=item.label ng-click=\"!disabled && views[view.selected].set(item)\"></td> </tr> </tbody> </table> </div> <div ng-if=additions.bottom class=\"moment-picker-addition bottom\"></div> </div> </div>";
 
-/***/ },
+/***/ }),
 /* 16 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
-/***/ }
+/***/ })
 /******/ ]);
