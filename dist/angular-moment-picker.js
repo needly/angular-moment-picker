@@ -99,8 +99,8 @@
 	            today: false,
 	            keyboard: false,
 	            showHeader: true,
-	            leftArrow: '&larr;',
-	            rightArrow: '&rarr;',
+	            leftArrow: '\u003C',
+	            rightArrow: '\u003E',
 	            // Decade View
 	            yearsFormat: 'YYYY',
 	            // Year View
