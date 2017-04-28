@@ -96,7 +96,7 @@
   table-layout: fixed;
 }
 .moment-picker .header-view {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .moment-picker th {
   font-weight: bold;
