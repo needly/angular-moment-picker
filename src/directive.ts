@@ -163,9 +163,9 @@ export default class Directive implements ng.IDirective {
 				close: () => {
 					if (!$scope.view.isOpen || $scope.inline) return;
 
-					$scope.isOpen = false;
-					$scope.view.isOpen = false;
-					$scope.view.selected = $scope.startView;
+					//$scope.isOpen = false;
+					//$scope.view.isOpen = false;
+					//$scope.view.selected = $scope.startView;
 				},
 				position: () => {
 					if (!$scope.view.isOpen || $scope.position || $scope.inline) return;
@@ -262,7 +262,7 @@ export default class Directive implements ng.IDirective {
 					let nextView = $scope.views.all.indexOf(view),
 						minView  = $scope.views.all.indexOf($scope.minView),
 						maxView  = $scope.views.all.indexOf($scope.maxView);
-					
+
 					const update = () => {
 						setValue($scope.view.moment, $scope, $ctrl, $attrs);
 						$scope.view.update();
