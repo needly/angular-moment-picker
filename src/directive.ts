@@ -286,7 +286,7 @@ export default class Directive implements ng.IDirective {
 			$scope.input = $scope.contents[0].tagName.toLowerCase() != 'input' && $scope.contents[0].querySelectorAll('input').length > 0
 				? angular.element($scope.contents[0].querySelectorAll('input'))
 				: angular.element($scope.contents[0]);
-			$scope.input.addClass('moment-picker-input').attr('tabindex', 0);
+			$scope.input.addClass('moment-picker-input').attr('tabindex', -1);
 			($scope.position || '').split(' ').forEach((className: string) => $scope.picker.addClass(className));
 
 			// transclude scope to template additions
