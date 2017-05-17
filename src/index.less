@@ -89,7 +89,7 @@
         cursor: pointer;
         border-radius: 4px;
         &:hover { background-color: @hover-bg-color; background-image: @hover-bg-image; }
-        &.disabled, &.disabled:hover { opacity: 0; color: @disabled-fg; background: none; cursor: default; }
+        &.disabled, &.disabled:hover { opacity: 0; color: @disabled-fg; background: none; cursor: default; pointer-events: none}
     }
     td {
         &.today { background: @today-bg; color: @today-fg; text-shadow: 0 1px 0 @today-fg-shadow; }

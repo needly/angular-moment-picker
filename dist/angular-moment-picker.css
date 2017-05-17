@@ -136,6 +136,7 @@
   color: #abbbc7;
   background: none;
   cursor: default;
+  pointer-events: none;
 }
 .moment-picker td.today {
   background: #05A6F7;
